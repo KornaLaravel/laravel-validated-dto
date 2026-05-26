@@ -1,0 +1,33 @@
+:root {
+  --vp-font-family-base: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-mono: 'Cascadia Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --vp-c-brand-1: #25823c;
+  --vp-c-brand-2: #2fa64d;
+  --vp-c-brand-3: #3bc35b;
+  --vp-c-brand-soft: rgba(59, 195, 91, 0.16);
+}
+
+.dark {
+  --vp-c-brand-1: #86ee8b;
+  --vp-c-brand-2: #71df8f;
+  --vp-c-brand-3: #3bc35b;
+  --vp-c-brand-soft: rgba(59, 195, 91, 0.18);
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc code,
+.vp-doc pre,
+.vp-doc kbd,
+.vp-doc samp {
+  font-family: var(--vp-font-family-mono);
+}
