@@ -104,11 +104,11 @@ final class StoreUserController
 }
 ```
 
-Access the full documentation [here](https://wendelladriel.github.io/laravel-validated-dto).
+Access the full documentation [here](https://laravel-validated-dto.wendelladriel.com).
 
 ## Changelog
 
-Please see the [changelog](https://wendelladriel.github.io/laravel-validated-dto/getting-started/changelog) for more information on what has changed recently.
+Please see the [changelog](https://laravel-validated-dto.wendelladriel.com/getting-started/changelog) for more information on what has changed recently.
 
 ## Contributing
 
