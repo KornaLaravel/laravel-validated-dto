@@ -7,6 +7,16 @@ export default defineConfig({
   title: 'Validated DTO',
   description: 'Data Transfer Objects with validation for Laravel applications',
   base,
+  head: [
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Validated DTO for Laravel' }],
+    ['meta', { property: 'og:description', content: 'Data Transfer Objects with validation for Laravel applications' }],
+    ['meta', { property: 'og:image', content: 'https://laravel-validated-dto.wendelladriel.com/laravel-validated-dto-banner.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'Validated DTO for Laravel' }],
+    ['meta', { name: 'twitter:description', content: 'Data Transfer Objects with validation for Laravel applications' }],
+    ['meta', { name: 'twitter:image', content: 'https://laravel-validated-dto.wendelladriel.com/laravel-validated-dto-banner.png' }],
+  ],
   themeConfig: {
     sidebar: [
       { text: 'Overview', link: '/' },
