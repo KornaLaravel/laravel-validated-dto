@@ -3,7 +3,7 @@
 Publish the config file:
 
 ```
-php artisan vendor:publish --provider="WendellAdriel\ValidatedDTO\Providers\ValidatedDTOServiceProvider" --tag=config
+php artisan vendor:publish --tag="validated-dto-config"
 ```
 
 The configuration file will look like this:

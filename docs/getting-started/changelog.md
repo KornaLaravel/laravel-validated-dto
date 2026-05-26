@@ -2,6 +2,11 @@
 
 Here's a quick overview of the new features in the latest major versions of the package.
 
+## 4.7.0
+
+* Added package-specific publish tags: `validated-dto`, `validated-dto-config`, and `validated-dto-stubs`.
+* Updated the `dto:stubs` command to use the new `validated-dto-stubs` publish tag.
+
 ## 4.6.0
 
 * Added Boost AI Skill.

@@ -25,7 +25,7 @@ composer require wendelladriel/laravel-validated-dto
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="WendellAdriel\ValidatedDTO\Providers\ValidatedDTOServiceProvider" --tag=config
+php artisan vendor:publish --tag="validated-dto"
 ```
 
 ## Usage

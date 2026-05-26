@@ -42,7 +42,7 @@ final class PublishStubsCommand extends Command
     public function handle(): void
     {
         $this->call('vendor:publish', [
-            '--tag' => 'validatedDTO-stubs',
+            '--tag' => 'validated-dto-stubs',
             '--force' => $this->option('force'),
         ]);
     }

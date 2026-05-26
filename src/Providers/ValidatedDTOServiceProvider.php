@@ -23,18 +23,15 @@ final class ValidatedDTOServiceProvider extends ServiceProvider
             ]);
         }
 
-        $this->publishes(
-            [
-                __DIR__ . '/../../config/dto.php' => base_path('config/dto.php'),
-            ],
-            'config'
-        );
+        $this->publishes([
+            __DIR__ . '/../../config/dto.php' => config_path('dto.php'),
+        ], ['validated-dto', 'validated-dto-config']);
 
         $this->publishes([
             __DIR__ . '/../../src/Console/stubs/resource_dto.stub' => base_path('stubs/resource_dto.stub'),
             __DIR__ . '/../../src/Console/stubs/simple_dto.stub' => base_path('stubs/simple_dto.stub'),
             __DIR__ . '/../../src/Console/stubs/dto.stub' => base_path('stubs/dto.stub'),
-        ], 'validatedDTO-stubs');
+        ], ['validated-dto', 'validated-dto-stubs']);
     }
 
     /**
