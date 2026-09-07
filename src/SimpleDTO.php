@@ -141,7 +141,7 @@ abstract class SimpleDTO implements BaseDTO, CastsAttributes, JsonSerializable
      */
     public function get($model, $key, $value, $attributes)
     {
-        $arrayCast = new ArrayCast();
+        $arrayCast = new ArrayCast;
 
         return new static($arrayCast->cast($key, $value));
     }
@@ -319,14 +319,14 @@ abstract class SimpleDTO implements BaseDTO, CastsAttributes, JsonSerializable
         $casts = [];
         foreach ($this->dtoCasts as $property => $cast) {
             if (is_null($cast->param)) {
-                $casts[$property] = new $cast->type();
+                $casts[$property] = new $cast->type;
 
                 continue;
             }
 
             $param = match (true) {
                 in_array($cast->type, [EnumCast::class, DTOCast::class]) => $cast->param,
-                default => new $cast->param(),
+                default => new $cast->param,
             };
 
             $casts[$property] = new $cast->type($param);

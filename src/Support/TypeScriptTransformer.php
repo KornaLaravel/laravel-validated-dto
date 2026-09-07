@@ -38,7 +38,7 @@ class TypeScriptTransformer implements Transformer
             return null;
         }
 
-        $missingSymbols = new MissingSymbolsCollection();
+        $missingSymbols = new MissingSymbolsCollection;
         $properties = $this->transformProperties($class, $missingSymbols);
 
         return TransformedType::create(

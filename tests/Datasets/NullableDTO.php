@@ -33,9 +33,9 @@ class NullableDTO extends ValidatedDTO
     protected function casts(): array
     {
         return [
-            'name' => new StringCast(),
-            'age' => new IntegerCast(),
-            'address' => new StringCast(),
+            'name' => new StringCast,
+            'age' => new IntegerCast,
+            'address' => new StringCast,
         ];
     }
 }

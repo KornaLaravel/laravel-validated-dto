@@ -22,8 +22,8 @@ class UserResourceDTO extends ResourceDTO
     protected function casts(): array
     {
         return [
-            'name' => new StringCast(),
-            'age' => new IntegerCast(),
+            'name' => new StringCast,
+            'age' => new IntegerCast,
         ];
     }
 }

@@ -12,7 +12,7 @@ use Spatie\TypeScriptTransformer\TypeScriptTransformerConfig;
 use WendellAdriel\ValidatedDTO\Support\TypeScriptTransformer;
 
 it('returns null when class does not extend SimpleDTO', function () {
-    $class = new class()
+    $class = new class
     {
         public string $name;
     };

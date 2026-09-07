@@ -30,8 +30,8 @@ class ValidatedDTOInstance extends ValidatedDTO
     protected function casts(): array
     {
         return [
-            'name' => new StringCast(),
-            'age' => new IntegerCast(),
+            'name' => new StringCast,
+            'age' => new IntegerCast,
         ];
     }
 }

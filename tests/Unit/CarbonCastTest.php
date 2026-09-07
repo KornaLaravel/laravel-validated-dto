@@ -9,7 +9,7 @@ use WendellAdriel\ValidatedDTO\Casting\CarbonImmutableCast;
 use WendellAdriel\ValidatedDTO\Exceptions\CastException;
 
 it('casts to carbon', function () {
-    $castable = new CarbonCast();
+    $castable = new CarbonCast;
 
     $date = date('Y-m-d');
     $result = $castable->cast(test_property(), $date);
@@ -62,7 +62,7 @@ it('casts to carbon with timezone', function () {
 });
 
 it('casts to carbon immutable', function () {
-    $castable = new CarbonImmutableCast();
+    $castable = new CarbonImmutableCast;
 
     $date = date('Y-m-d');
     $result = $castable->cast(test_property(), $date);

@@ -32,8 +32,8 @@ class WireableDTO extends SimpleDTO
     protected function casts(): array
     {
         return [
-            'name' => new StringCast(),
-            'age' => new IntegerCast(),
+            'name' => new StringCast,
+            'age' => new IntegerCast,
             'simple_name_dto' => new DTOCast(SimpleNameDTO::class),
             'simple_names_collection' => new CollectionCast(new DTOCast(SimpleNameDTO::class)),
         ];

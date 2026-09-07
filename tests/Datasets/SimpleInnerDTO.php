@@ -22,8 +22,8 @@ class SimpleInnerDTO extends SimpleDTO
     protected function casts(): array
     {
         return [
-            'name' => new StringCast(),
-            'number' => new IntegerCast(),
+            'name' => new StringCast,
+            'number' => new IntegerCast,
         ];
     }
 }

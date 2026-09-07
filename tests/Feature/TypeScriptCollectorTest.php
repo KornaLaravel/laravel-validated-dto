@@ -9,7 +9,7 @@ use WendellAdriel\ValidatedDTO\Support\TypeScriptCollector;
 use WendellAdriel\ValidatedDTO\Support\TypeScriptTransformer;
 
 it('returns null when class does not extend SimpleDTO', function () {
-    $class = new class() {};
+    $class = new class {};
 
     $reflection = new ReflectionClass($class);
     $collector = new TypeScriptCollector(TypeScriptTransformerConfig::create());
