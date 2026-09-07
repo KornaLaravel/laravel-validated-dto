@@ -21,7 +21,7 @@ trait DataResolver
     {
         $jsonDecoded = json_decode($json, true);
         if (! is_array($jsonDecoded)) {
-            throw new InvalidJsonException();
+            throw new InvalidJsonException;
         }
 
         return new static($jsonDecoded);

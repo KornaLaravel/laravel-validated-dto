@@ -90,7 +90,7 @@ it('validates that a SimpleDTO can be instantiated from a Request', function () 
 });
 
 it('validates that a SimpleDTO can be instantiated from an Eloquent Model', function () {
-    $model = new class() extends Model
+    $model = new class extends Model
     {
         protected $fillable = ['name'];
     };
@@ -104,7 +104,7 @@ it('validates that a SimpleDTO can be instantiated from an Eloquent Model', func
 });
 
 it('validates that a SimpleDTO can be instantiated from Command arguments', function () {
-    $command = new class() extends Command
+    $command = new class extends Command
     {
         protected $signature
             = 'test:command
@@ -126,7 +126,7 @@ it('validates that a SimpleDTO can be instantiated from Command arguments', func
 });
 
 it('validates that a SimpleDTO can be instantiated from Command options', function () {
-    $command = new class() extends Command
+    $command = new class extends Command
     {
         protected $signature
             = 'test:command
@@ -148,7 +148,7 @@ it('validates that a SimpleDTO can be instantiated from Command options', functi
 });
 
 it('validates that a SimpleDTO can be instantiated from a Command', function () {
-    $command = new class() extends Command
+    $command = new class extends Command
     {
         protected $signature
             = 'test:command
@@ -198,7 +198,7 @@ it('validates that the SimpleDTO can be converted into a pretty JSON string', fu
 it('validates that the SimpleDTO can be converted into an Eloquent Model', function () {
     $simpleDTO = new SimpleDTOInstance(['name' => $this->subject_name]);
 
-    $model = new class() extends Model
+    $model = new class extends Model
     {
         protected $fillable = ['name'];
     };
@@ -354,7 +354,7 @@ it('checks that update for nested DTO property reflects while converting DTO to 
 });
 
 it('validates that a SimpleDTO can be instantiated from an Eloquent Model and also get serialized', function () {
-    $model = new class() extends Model
+    $model = new class extends Model
     {
         protected $fillable = ['name'];
     };

@@ -120,5 +120,5 @@ it('validates that a Wireable DTO will be empty when instantiated with the fromL
     'string',
     10.5,
     10,
-    new stdClass(),
+    new stdClass,
 ]);

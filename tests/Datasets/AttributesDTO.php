@@ -30,8 +30,8 @@ class AttributesDTO extends ValidatedDTO
     protected function casts(): array
     {
         return [
-            'age' => new IntegerCast(),
-            'doc' => new StringCast(),
+            'age' => new IntegerCast,
+            'doc' => new StringCast,
         ];
     }
 }
